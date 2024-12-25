@@ -1,20 +1,9 @@
 let furniture = ['Table','Chairs','Couch'];
 
-console.log('-- while --');
-let index = 0;
-while (index < furniture .length) {
-    const name = furniture [index];
-    console.log(name);
-    index++;
-};
+for (let test of furniture){
+    console.log(test)
 
-console.log(' - for --');
-for (let index = 0; index < furniture .length; index++) {
-    const name = furniture [index];
-    console.log(name);
-};
-
-console.log('-- for of --');
-for (let name of furniture ) {
-    console.log(name);
+    for (let char of test) {
+        console.log( char ); 
+    }
 }
