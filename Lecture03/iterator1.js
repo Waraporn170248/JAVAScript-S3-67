@@ -1,4 +1,4 @@
-let str = "Hello";
+let str = "test";
 
 // does the same as
 // for (let char of str) conslo.log(char);
