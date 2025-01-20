@@ -1,11 +1,32 @@
-let arrayLength = 7;
-let arr1 = [];
-let arr2 = Array(arrayLength);
-let arr3 = ['A',false,5]
+let arrayLength = 7; // กำหนดตัวแปร `arrayLength` มีค่าเป็น 7
+let arr1 = []; // ประกาศตัวแปร `arr1` เป็นอาร์เรย์ว่าง (ไม่มีค่าใด ๆ)
 
-//Getting array length
+let arr2 = Array(arrayLength);
+// ประกาศตัวแปร `arr2` เป็นอาร์เรย์ที่มีขนาด (length) เท่ากับ 7
+// แต่ไม่ได้กำหนดค่าให้กับแต่ละตำแหน่งในอาร์เรย์ (`undefined`)
+
+let arr3 = ['A',false,5]
+// ประกาศตัวแปร `arr3` เป็นอาร์เรย์ที่มีค่าดังนี้:
+// - ตำแหน่งที่ 0 : สตริง `'A'`
+// - ตำแหน่งที่ 1 : ค่าบูลีน `false`
+// - ตำแหน่งที่ 2 : ตัวเลข `5`
+
 console.log(arr1.length);
+// แสดงความยาว (length) ของ `arr1`
+// ผลลัพธ์: 0 เพราะ `arr1` เป็นอาร์เรย์ว่าง
+
 console.log(arr2.length);
+// แสดงความยาว (length) ของ `arr2`
+// ผลลัพธ์: 7 เพราะ `arr2` ถูกสร้างด้วย `Array(arrayLength)` ที่มีขนาด 7
+
 console.log(arr3.length);
+// แสดงความยาว (length) ของ `arr3`
+// ผลลัพธ์: 3 เพราะ `arr3` มี 3 ค่าในอาร์เรย์
+
 console.log(arr3[0]);
+// แสดงค่าที่ตำแหน่งที่ 0 ของ `arr3`
+// ผลลัพธ์: `'A'`
+
 console.log(arr3[2]);
+// แสดงค่าที่ตำแหน่งที่ 2 ของ `arr3`
+// ผลลัพธ์: `5`

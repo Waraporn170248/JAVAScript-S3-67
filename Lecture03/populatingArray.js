@@ -1,15 +1,36 @@
-let arr1 = ["A",true,2];
+let arr1 = ["A", true, 2];
+// ประกาศอาร์เรย์ `arr1` ที่ประกอบด้วยค่า "A", true, และ 2
 
 console.log("\n********Length and index********\n");
+// แสดงข้อความหัวข้อ "Length and index"
+
 console.log(arr1.length);
-console.log(arr1[3]);//Doesn't exist
-console.log(arr1[2]);//Last index of array
- console.log(arr1[arr1.length-1]);
+// แสดงผลลัพธ์ความยาวของอาร์เรย์ `arr1`, ซึ่งจะเป็น 3 เนื่องจากมี 3 สมาชิก
+
+console.log(arr1[3]);
+// แสดงผลลัพธ์ของสมาชิกที่ตำแหน่งดัชนี 3 ของอาร์เรย์ `arr1` ซึ่งไม่มีค่า (undefined) เพราะอาร์เรย์ `arr1` มีสมาชิกเพียงแค่ 3 ตัว (ดัชนี 0, 1, 2)
+
+console.log(arr1[2]);
+// แสดงผลลัพธ์ของสมาชิกที่ตำแหน่งดัชนี 2 ของอาร์เรย์ `arr1`, ซึ่งเป็นสมาชิกตัวสุดท้ายในอาร์เรย์ (ค่า: 2)
+
+console.log(arr1[arr1.length-1]);
+// แสดงผลลัพธ์ของสมาชิกที่ตำแหน่งสุดท้ายของอาร์เรย์ `arr1` โดยใช้ `arr1.length-1` เพื่อระบุตำแหน่งสุดท้าย (ค่า: 2)
 
 console.log("\n********Length and index Part 2********\n");
-let arr3 = Array(3);//Empty array of length 3
+// แสดงข้อความหัวข้อ "Length and index Part 2"
+
+let arr3 = Array(3); // สร้างอาร์เรย์ที่มีความยาว 3 แต่ไม่มีค่าในแต่ละตำแหน่ง
 arr3[2] = "Adding a value!";
-console.log(arr3[2]);//Last index of array
-console.log(arr3[arr3.length-1]);//Index: 2
-console.log(arr3[0]);//No value yet
-console.log(arr3[1]);//No value yet
+// กำหนดค่า "Adding a value!" ให้กับสมาชิกที่ตำแหน่งดัชนี 2 ของ `arr3`
+
+console.log(arr3[2]);
+// แสดงผลลัพธ์ของสมาชิกที่ตำแหน่งดัชนี 2 ของอาร์เรย์ `arr3`, ซึ่งเป็น "Adding a value!"
+
+console.log(arr3[arr3.length-1]);
+// แสดงผลลัพธ์ของสมาชิกที่ตำแหน่งสุดท้ายของอาร์เรย์ `arr3`, โดยใช้ `arr3.length-1` เพื่อระบุตำแหน่งสุดท้าย (ค่า: "Adding a value!")
+
+console.log(arr3[0]);
+// แสดงผลลัพธ์ของสมาชิกที่ตำแหน่งดัชนี 0 ของอาร์เรย์ `arr3`, ซึ่งยังไม่มีค่า (undefined)
+
+console.log(arr3[1]);
+// แสดงผลลัพธ์ของสมาชิกที่ตำแหน่งดัชนี 1 ของอาร์เรย์ `arr3`, ซึ่งยังไม่มีค่า (undefined)

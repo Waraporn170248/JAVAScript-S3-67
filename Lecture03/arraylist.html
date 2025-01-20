@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8"> <!-- กำหนดการเข้ารหัสตัวอักษรให้เป็นแบบ UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ทำให้หน้าเว็บรองรับการแสดงผลบนอุปกรณ์ต่าง ๆ เช่น มือถือ -->
+    <title>Document</title> <!-- ชื่อของเอกสารที่จะแสดงบนแท็บของเบราว์เซอร์ -->
 </head>
 <body>
-    <h2>JavaScript Array.forEach()</h2>
+    <h2>JavaScript Array.forEach()</h2> <!-- แสดงหัวข้อย่อยของเนื้อหา -->
 
-    <p>Calls a function one for each array element.</p>
+    <p>Calls a function one for each array element.</p> <!-- คำอธิบายว่า Array.forEach() ทำงานอย่างไร -->
 
-    <p id = "demo" ></p>
-
+    <p id = "demo" ></p> <!-- แท็ก <p> ที่มี id เป็น "demo" ไว้สำหรับแสดงผลลัพธ์ใน JavaScript -->
+        
     <script>
-        var txt = "";
-        var numbers = [45,4,,9,16,25];
-        numbers.forEach(myFunction);
-        document.getElementById('demo').innerHTML = txt;
+        var txt = ""; // ประกาศตัวแปร `txt` และกำหนดค่าเริ่มต้นเป็นสตริงว่าง 
+        var numbers = [45,4,,9,16,25]; //ประกาศตัวแปร `numbers` เป็นอาร์เรย์ที่ประกอบด้วยค่าตัวเลข 
+        numbers.forEach(myFunction); //ใช้เมธอด forEach() เรียกใช้ฟังก์ชัน `myFunction` กับแต่ละองค์ประกอบในอาร์เรย์
+        document.getElementById('demo').innerHTML = txt; //แสดงผลลัพธ์ในตัวแปร `txt` ไปยังแท็ก <p> ที่มี id เป็น "demo"
 
-        function myFunction(value) {
-            txt = txt + value + "<br>";
+        function myFunction(value) { //ฟังก์ชัน `myFunction` รับพารามิเตอร์ `value` ที่แทนค่าของแต่ละองค์ประกอบในอาร์เรย์
+            txt = txt + value + "<br>"; //เพิ่มค่าของ `value` พร้อมกับขึ้นบรรทัดใหม่ไปยังตัวแปร `txt`
         }
     </script>
 </body>
