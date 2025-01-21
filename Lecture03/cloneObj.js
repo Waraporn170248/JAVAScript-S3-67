@@ -1,7 +1,7 @@
 
 const obj1 = { // ประกาศตัวแปร `obj1` เป็นออบเจ็กต์ที่มีสอง property:
     person : 'Anirach', // person มีค่าเป็นสตริง 'Anirach'`
-    weight : 85 // weight มีค่าเป็นตัวเลข `85`
+    weight : 85 // weight` มีค่าเป็นตัวเลข `85`
 }
 
 const obj2 = {... obj1};
@@ -16,4 +16,4 @@ console.log(obj1);
 // แสดงค่า `obj1` ซึ่งยังคงเป็น `{ person: 'Anirach', weight: 85 }`
 
 console.log(obj2);
-// แสดงค่า `obj2` ซึ่งกลายเป็น `{ person: 'Anirach', weight: 75 }`
+// แสดงค่า `obj2` ซึ่งกลายเป็น `{ person: 'Anirach', weight: 75 }` 
